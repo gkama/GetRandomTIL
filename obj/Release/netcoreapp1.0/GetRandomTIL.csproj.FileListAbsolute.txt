@@ -1,0 +1,8 @@
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\bin\Release\netcoreapp1.0\GetRandomTIL.deps.json
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\bin\Release\netcoreapp1.0\GetRandomTIL.dll
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\bin\Release\netcoreapp1.0\GetRandomTIL.pdb
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\obj\Release\netcoreapp1.0\GetRandomTIL.csproj.CoreCompileInputs.cache
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\obj\Release\netcoreapp1.0\GetRandomTIL.AssemblyInfoInputs.cache
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\obj\Release\netcoreapp1.0\GetRandomTIL.AssemblyInfo.cs
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\obj\Release\netcoreapp1.0\GetRandomTIL.dll
+c:\users\gkama\documents\visual studio 2017\Projects\GetRandomTIL\GetRandomTIL\obj\Release\netcoreapp1.0\GetRandomTIL.pdb

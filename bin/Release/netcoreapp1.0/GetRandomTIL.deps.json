@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "e384e1531919e24d8c184dbef34f9478a6d06b74"
+    "signature": "17a236d20d34cc1b50620afb6c343f4716a3bc46"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,11 +9,20 @@
       "GetRandomTIL/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.4.20",
+          "Amazon.Lambda.APIGatewayEvents": "1.1.0",
           "Amazon.Lambda.Core": "1.0.0",
           "Amazon.Lambda.Serialization.Json": "1.1.0"
         },
         "runtime": {
           "GetRandomTIL.dll": {}
+        }
+      },
+      "Amazon.Lambda.APIGatewayEvents/1.1.0": {
+        "dependencies": {
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Amazon.Lambda.APIGatewayEvents.dll": {}
         }
       },
       "Amazon.Lambda.Core/1.0.0": {
@@ -63,6 +72,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Amazon.Lambda.APIGatewayEvents/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wAFQ3GQxgVSGS8YWx7pAb5jfB7fLhMnON8wiBZUm0liserj5L8MXbUXf/ptSvr5Ezfu3rzV+rPrR1YrB688zvg==",
+      "path": "amazon.lambda.apigatewayevents/1.1.0",
+      "hashPath": "amazon.lambda.apigatewayevents.1.1.0.nupkg.sha512"
     },
     "Amazon.Lambda.Core/1.0.0": {
       "type": "package",

@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "Amazon.Lambda.APIGatewayEvents/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Collections": "4.0.11",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Amazon.Lambda.APIGatewayEvents.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Amazon.Lambda.APIGatewayEvents.dll": {}
+        }
+      },
       "Amazon.Lambda.Core/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2217,6 +2232,17 @@
     }
   },
   "libraries": {
+    "Amazon.Lambda.APIGatewayEvents/1.1.0": {
+      "sha512": "wAFQ3GQxgVSGS8YWx7pAb5jfB7fLhMnON8wiBZUm0liserj5L8MXbUXf/ptSvr5Ezfu3rzV+rPrR1YrB688zvg==",
+      "type": "package",
+      "path": "amazon.lambda.apigatewayevents/1.1.0",
+      "files": [
+        "amazon.lambda.apigatewayevents.1.1.0.nupkg.sha512",
+        "amazon.lambda.apigatewayevents.nuspec",
+        "lib/netstandard1.3/Amazon.Lambda.APIGatewayEvents.dll",
+        "lib/netstandard1.3/Amazon.Lambda.APIGatewayEvents.xml"
+      ]
+    },
     "Amazon.Lambda.Core/1.0.0": {
       "sha512": "+pBYGHaOaDAhu2j8BA5MhKLwxZM7lgmTSroGyCzEqWMBx+uc+QtpED2ShCAkKjKeedXH+LvJpQAUkEtW7rfcgQ==",
       "type": "package",
@@ -7016,6 +7042,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.0": [
       "AWSSDK.DynamoDBv2 >= 3.3.4.20",
+      "Amazon.Lambda.APIGatewayEvents >= 1.1.0",
       "Amazon.Lambda.Core >= 1.0.0",
       "Amazon.Lambda.Serialization.Json >= 1.1.0",
       "Microsoft.NETCore.App >= 1.0.5"
@@ -7027,11 +7054,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\GetRandomTIL.csproj",
+      "projectUniqueName": "C:\\Users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\GetRandomTIL.csproj",
       "projectName": "GetRandomTIL",
-      "projectPath": "c:\\users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\GetRandomTIL.csproj",
+      "projectPath": "C:\\Users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\GetRandomTIL.csproj",
       "packagesPath": "C:\\Users\\gkama\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\obj\\",
+      "outputPath": "C:\\Users\\gkama\\documents\\visual studio 2017\\Projects\\GetRandomTIL\\GetRandomTIL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gkama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7063,6 +7090,10 @@
             "target": "Package",
             "version": "1.0.5",
             "autoReferenced": true
+          },
+          "Amazon.Lambda.APIGatewayEvents": {
+            "target": "Package",
+            "version": "1.1.0"
           },
           "Amazon.Lambda.Core": {
             "target": "Package",

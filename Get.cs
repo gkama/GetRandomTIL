@@ -27,7 +27,7 @@ namespace GetRandomTIL
         }
 
         //Scan the table
-        public async Task<Document> Child()
+        public async Task<Data.data> Child()
         {
 
             var client = new AmazonDynamoDBClient();
@@ -56,7 +56,8 @@ namespace GetRandomTIL
             } while (!tableSearch.IsDone);
 
             //Return
-            return await getChild(client, reddit_til_table);
+            Document doc = await getChild(client, reddit_til_table);
+            return new Data().CastToData(doc);
         }
 
         //Get random child

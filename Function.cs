@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Amazon.Lambda.Core;
+using Amazon.Lambda.APIGatewayEvents;
 
 using Newtonsoft.Json;
 
@@ -20,13 +21,45 @@ namespace GetRandomTIL
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public async Task<string> FunctionHandler(ILambdaContext context)
+        public async Task<response> FunctionHandler(APIGatewayCustomAuthorizerRequest request, ILambdaContext context)
         {
-            Get get_til = new Get("reddit_til", context);
-            string child_str = JsonConvert.SerializeObject(await get_til.Child(), Formatting.Indented);
+            try
+            {
+                Get get_til = new Get("reddit_til", context);
+                string child_str = JsonConvert.SerializeObject(await get_til.Child(), Formatting.Indented);
 
-            //Return
-            return child_str;
+                //Response
+                var response = new response()
+                {
+                    statusCode = "200",
+                    headers = new Dictionary<string, string>() { { "Access-Control-Allow-Origin", "*" } },
+                    body = child_str
+                };
+
+                //Return
+                return response;
+            }
+            catch (Exception e)
+            {
+                //Response
+                var response = new response()
+                {
+                    statusCode = "400",
+                    headers = new Dictionary<string, string>() { { "Access-Control-Allow-Origin", "*" } },
+                    body = e.Message
+                };
+
+                //Return
+                return response;
+            }
+        }
+
+        //Response
+        public class response
+        {
+            public string statusCode { get; set; }
+            public Dictionary<string, string> headers { get; set; }
+            public string body { get; set; }
         }
     }
 }
